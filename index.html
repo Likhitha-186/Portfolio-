@@ -3,157 +3,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Likhitha Pragada | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
       margin: 0;
-      background: #fff8e7;
-      color: #333;
-      scroll-behavior: smooth;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fffef5;
+      color: #333;
+      line-height: 1.6;
+    }
+
     header {
       background: royalblue;
       color: white;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    nav {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 999;
+      justify-content: center;
+      background: #eee;
+      flex-wrap: wrap;
     }
+
     nav a {
-      color: white;
-      margin: 0 1rem;
       text-decoration: none;
-      font-weight: bold;
+      color: royalblue;
+      padding: 1rem;
+      font-weight: 500;
+      transition: background 0.3s;
     }
+
+    nav a:hover {
+      background: #dbe9ff;
+    }
+
     section {
-      padding: 2rem;
-      min-height: 100vh;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
       transition: transform 0.3s ease-in-out;
     }
+
     h2 {
       color: royalblue;
+      margin-bottom: 1rem;
     }
-    .highlight {
-      color: #e67e22;
-      font-weight: bold;
+
+    ul {
+      padding-left: 1.2rem;
     }
-    .sidebar {
-      position: fixed;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 200px;
-      background: #f5f5dc;
-      border-right: 2px solid #ddd;
-      padding-top: 3rem;
-      display: flex;
-      flex-direction: column;
+
+    ul li {
+      margin-bottom: 0.6rem;
     }
-    .sidebar a {
-      color: royalblue;
-      padding: 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .main-content {
-      margin-left: 200px;
-    }
+
     .contact-form input, .contact-form textarea {
       width: 100%;
-      padding: 0.5rem;
+      padding: 0.8rem;
       margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
     }
+
     .contact-form button {
-      padding: 0.6rem 1.2rem;
       background: royalblue;
       color: white;
       border: none;
+      padding: 0.8rem 1.2rem;
+      border-radius: 6px;
       cursor: pointer;
+      font-weight: 600;
+    }
+
+    .contact-form button:hover {
+      background: #27408b;
+    }
+
+    a {
+      color: #27408b;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div><strong>Likhitha Pragada</strong></div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#activities">Activities</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <header>Likhitha Pragada</header>
 
-  <div class="sidebar">
+  <nav>
     <a href="#home">Home</a>
     <a href="#education">Education</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#activities">Activities</a>
     <a href="#contact">Contact</a>
-  </div>
+  </nav>
 
-  <div class="main-content">
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>I’m <strong>Likhitha Pragada</strong>, a B.Tech 3rd-year Civil Engineering student from GMR Institute of Technology. Passionate about design, AutoCAD, and web development.</p>
+  </section>
 
-    <section id="home">
-      <h2>Hello, I'm <span class="highlight">Likhitha Pragada</span></h2>
-      <p>B.Tech Civil Engineering Student | Passionate about structural modeling, AutoCAD, and web development.</p>
-    </section>
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>GMR Institute of Technology</strong>, Andhra Pradesh</p>
+    <p>B.Tech in Civil Engineering (Expected: 2026)</p>
+  </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p><strong>GMR Institute of Technology</strong>, Andhra Pradesh</p>
-      <p>B.Tech in Civil Engineering (3rd Year, 2nd Sem, Graduation: 2026)</p>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Structural Design Project:</strong> Designed a multi-storey building using AutoCAD and Revit.</li>
+      <li><strong>Web Portfolio:</strong> Created with HTML and CSS to showcase development skills.</li>
+    </ul>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Structural Design Project:</strong> Multi-storey building using AutoCAD and Revit focused on structural integrity.</li>
-        <li><strong>Web Portfolio:</strong> Created using HTML & CSS to showcase skills and creativity.</li>
-      </ul>
-    </section>
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>AutoCAD, Revit</li>
+      <li>HTML, CSS, Python</li>
+      <li>Structural Analysis, Drafting</li>
+    </ul>
+  </section>
 
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>AutoCAD, Revit</li>
-        <li>HTML, CSS, Python</li>
-        <li>Structural Analysis and Drafting</li>
-      </ul>
-    </section>
+  <section id="activities">
+    <h2>Extra Activities</h2>
+    <ul>
+      <li>Member of CESA (Civil Engineering Student Association)</li>
+      <li>Participated in coding & design contests</li>
+      <li>Certified in AutoCAD, Python Basics</li>
+      <li>Volunteer: Mentoring juniors, tech fests</li>
+    </ul>
+  </section>
 
-    <section id="activities">
-      <h2>Extra Activities</h2>
-      <ul>
-        <li>Member of Civil Engineering Student Association (CESA)</li>
-        <li>Participated in college-level coding & design contests</li>
-        <li><strong>Certifications:</strong> AutoCAD design, Python basics (Coursera)</li>
-        <li><strong>Workshops:</strong> Attended sustainable construction & structural integrity seminars</li>
-        <li><strong>Volunteer Work:</strong> Organized tech fest booths and mentoring juniors in AutoCAD basics</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <p>Email: <a href="mailto:pragadalikhitha3@gmail.com">pragadalikhitha3@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/pragada-likhitha-910686289" target="_blank">View Profile</a></p>
-    </section>
-
-  </div>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: <a href="mailto:pragadalikhitha3@gmail.com">pragadalikhitha3@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/pragada-likhitha-910686289" target="_blank">View Profile</a></p>
+  </section>
 
 </body>
 </html>
