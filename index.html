@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Likhitha Pragada | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fff8e7;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: royalblue;
+      color: white;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      min-height: 100vh;
+      transition: transform 0.3s ease-in-out;
+    }
+    h2 {
+      color: royalblue;
+    }
+    .highlight {
+      color: #e67e22;
+      font-weight: bold;
+    }
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 200px;
+      background: #f5f5dc;
+      border-right: 2px solid #ddd;
+      padding-top: 3rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar a {
+      color: royalblue;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .main-content {
+      margin-left: 200px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+    }
+    .contact-form button {
+      padding: 0.6rem 1.2rem;
+      background: royalblue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Likhitha Pragada</strong></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#activities">Activities</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="sidebar">
+    <a href="#home">Home</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#activities">Activities</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="main-content">
+
+    <section id="home">
+      <h2>Hello, I'm <span class="highlight">Likhitha Pragada</span></h2>
+      <p>B.Tech Civil Engineering Student | Passionate about structural modeling, AutoCAD, and web development.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>GMR Institute of Technology</strong>, Andhra Pradesh</p>
+      <p>B.Tech in Civil Engineering (3rd Year, 2nd Sem, Graduation: 2026)</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Structural Design Project:</strong> Multi-storey building using AutoCAD and Revit focused on structural integrity.</li>
+        <li><strong>Web Portfolio:</strong> Created using HTML & CSS to showcase skills and creativity.</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>AutoCAD, Revit</li>
+        <li>HTML, CSS, Python</li>
+        <li>Structural Analysis and Drafting</li>
+      </ul>
+    </section>
+
+    <section id="activities">
+      <h2>Extra Activities</h2>
+      <ul>
+        <li>Member of Civil Engineering Student Association (CESA)</li>
+        <li>Participated in college-level coding & design contests</li>
+        <li><strong>Certifications:</strong> AutoCAD design, Python basics (Coursera)</li>
+        <li><strong>Workshops:</strong> Attended sustainable construction & structural integrity seminars</li>
+        <li><strong>Volunteer Work:</strong> Organized tech fest booths and mentoring juniors in AutoCAD basics</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Email: <a href="mailto:pragadalikhitha3@gmail.com">pragadalikhitha3@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/pragada-likhitha-910686289" target="_blank">View Profile</a></p>
+    </section>
+
+  </div>
+
+</body>
+</html>
